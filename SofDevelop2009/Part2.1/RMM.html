@@ -1,0 +1,720 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="pageview"><head>
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- base -->
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  
+
+  
+    .writely-callout-data {
+      display: none;
+      *display: inline-block;
+      *width: 0;
+      *height: 0;
+      *overflow: hidden;
+    }
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    
+    .editor .writely-comment-yellow {
+      background-color: #FF9;
+      background-position: -240px 0;
+    }
+    .editor .writely-comment-yellow-hover {
+      background-color: #FF0;
+      background-position: -224px 0;
+    }
+    .editor .writely-comment-blue {
+      background-color: #C0D3FF;
+      background-position: -16px 0;
+    }
+    .editor .writely-comment-blue-hover {
+      background-color: #6292FE;
+      background-position: 0 0;
+    }
+    .editor .writely-comment-orange {
+      background-color: #FFDEAD;
+      background-position: -80px 0;
+    }
+    .editor .writely-comment-orange-hover {
+      background-color: #F90;
+      background-position: -64px 0;
+    }
+    .editor .writely-comment-green {
+      background-color: #99FBB3;
+      background-position: -48px 0;
+    }
+    .editor .writely-comment-green-hover {
+      background-color: #00F442;
+      background-position: -32px 0;
+    }
+    .editor .writely-comment-cyan {
+      background-color: #CFF;
+      background-position: -208px 0;
+    }
+    .editor .writely-comment-cyan-hover {
+      background-color: #0FF;
+      background-position: -192px 0;
+    }
+    .editor .writely-comment-purple {
+      background-color: #EBCCFF;
+      background-position: -144px 0;
+    }
+    .editor .writely-comment-purple-hover {
+      background-color: #90F;
+      background-position: -128px 0;
+    }
+    .editor .writely-comment-magenta {
+      background-color: #FCF;
+      background-position: -112px 0;
+    }
+    .editor .writely-comment-magenta-hover {
+      background-color: #F0F;
+      background-position: -96px 0;
+    }
+    .editor .writely-comment-red {
+      background-color: #FFCACA;
+      background-position: -176px 0;
+    }
+    .editor .writely-comment-red-hover {
+      background-color: #FF7A7A;
+      background-position: -160px 0;
+    }
+
+    .editor .writely-comment-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      padding-right: 11px;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      -moz-user-select: none;
+    }
+
+    .editor .writely-comment-hidden {
+      padding: 0;
+      background: none;
+    }
+    .editor .writely-comment-marker-hidden {
+      background: none;
+      padding: 0;
+      width: 0;
+    }
+    .editor .writely-comment-none {
+      opacity: .2;
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+      -moz-opacity: .2;
+    }
+    .editor .writely-comment-none-hover {
+      opacity: .2;
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+      -moz-opacity: .2;
+    }
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>K25 - HF - RMM</title>
+
+</head><body>
+    
+    
+    
+<div style="text-align: center;">
+  <h1>
+    Πληροφορική &amp; Τηλεπικοινωνίες K25<br>
+    Ανάπτυξη Λογισμικού<br>
+    Χειμερινό Εξάμηνο 2009-10<br>
+    Καθηγητής Γιάννης Ιωαννίδης
+  </h1>
+</div>
+<p>
+</p>
+<hr>
+<h1 style="text-align: center;">
+  Μέρος 2ο, 1/2: Μονάδα διαχείρισης εγγραφών<br>
+</h1>
+<div>
+</div>
+<h3 style="text-align: center;">
+  (Ημερομηνία Παράδοσης: Τρίτη, 1/12/2009, 17:00)
+</h3>
+<br>
+<br>
+<div style="text-align: center;">
+  <img src="RMM_files/drawing_snTqL4lRg5wNfLcR_A-TMdA_161.png"><br>
+  <br>
+</div>
+<br>
+<b><font size="4"><i>Μονάδα διαχείρισης εγγραφών (Record Management Module)</i></font></b><br>
+<div style="text-align: left;">
+  <hr size="2">
+</div>
+<h2 style="text-align: left;">
+  Εισαγωγή
+</h2>
+<div style="text-align: left;"> Η μονάδα διαχείρισης εγγραφών αποτελεί
+τμήμα του επιπέδου διαχείρισης αρχείων σωρού (Heap Files). Γενικά, το
+επίπεδο των αρχείων σωρού βρίσκεται πάνω από αυτό της διαχείρισης μπλοκ
+αρχείων (BF). Για το λόγο αυτό θα χρησιμοποιείται την διεπαφή του έχετε
+ήδη υλοποιήσει στο BF επίπεδο προκειμένου να έχετε πρόσβαση σε αρχεία
+του δίσκου, όπως φαίνεται και στο αντίστοιχο σχήμα.<br>
+Κάθε αρχείο σωρού περιέχει εγγραφές και το συγκεκριμένο τμήμα (RMM)
+είναι υπεύθυνο για τη διαχείρισή τους. Συγκεκριμένα, το RMM
+περιλαμβάνει συναρτήσεις που αφορούν την εισαγωγή, διαγραφή και
+ανάκτηση συγκεκριμένων εγγραφών. Οι εγγραφές ενός αρχείου έχουν σταθερό
+μέγεθος το οποίο δίνεται ως όρισμα στις συναρτήσεις τις οποίες καλείστε
+να υλοποιήσετε.<br>
+</div>
+<div style="text-align: left;">
+  <br>
+  Η εργασία αυτή είναι ομαδική. Η γλώσσα υλοποίησης είναι η C.<br>
+  <br>
+</div>
+<hr>
+<div style="text-align: left;">
+  <font size="4"><b>Ρουτίνες Υλοποίησης της μονάδας διαχείρισης σαρώσεων&nbsp;</b></font>
+</div>
+<br>
+<br>
+<font size="4"><span style="font-family: Verdana;">int RMM_InsertRec()</span></font><br>
+<br>
+<span style="font-family: Verdana;">int RMM_InsertRec(</span><font style="font-family: Courier New;" face="Courier New"><br>
+&nbsp;&nbsp; &nbsp;int fileDesc,&nbsp;&nbsp;&nbsp;&nbsp; /* αριθμός που αντιστοιχεί σε ανοιχτό αρχείο */<br>
+&nbsp;&nbsp; &nbsp;char *record,&nbsp;&nbsp; /* δείκτης προς τα περιεχόμενα εγγραφής */<br>
+&nbsp;&nbsp; &nbsp;int recordSize&nbsp; /* μέγεθος κάθε εγγραφής του αρχείου */<br>
+<span style="font-family: Verdana;">)</span><br>
+</font><br>
+Η ρουτίνα εισάγει την εγγραφή που δείχνει ο δείκτης <i>record</i> στο ανοιχτό αρχείο με αναγνωριστικό αριθμό <i>fileDesc</i>. Το μέγεθος της εγγραφής είναι <i>recordSize</i>. Η ρουτίνα επιστρέφει έναν μη αρνητικό ακέραιο ως το αναγνωριστικό εγγραφής (<i>recId</i>) το οποίο έχει ανατεθεί στη νεοεισελθούσα εγγραφή, αν η εισαγωγή είναι επιτυχής, ειδ' αλλοιώς έναν κωδικό σφάλματος.<br>
+<br>
+<span style="font-family: Courier New;"><br>
+<font size="4"><span style="font-family: Verdana;">int RMM_DeleteRec()</span></font></span><br>
+<span style="font-family: Courier New;"><br>
+<span style="font-family: Verdana;">int RMM_DeleteRec(</span></span><br style="font-family: Courier New;">
+<span style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;int fileDesc, /* αναγνωριστικός αριθμός ανοιχτού αρχείου*/</span><br style="font-family: Courier New;">
+<span style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;int recId, /* αναγνωριστικός αριθμός εγγραφής */ </span><br style="font-family: Courier New;">
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;int recordSize /* μέγεθος κάθε εγγραφής του αρχείου */
+</div>
+<div>
+  <span style="font-family: Verdana;">)</span><br>
+  <br>
+</div>
+<div> Η ρουτίνα διαγράφει την εγγραφή με αναγνωριστικό αριθμό recId,
+από το ανοιχτό αρχείο με αναγνωριστικό fileDesc. Το μέγεθος της
+εγγραφής είναι recordSize. Η ρουτίνα επιστρέφει HFE_OK αν η διαγραφή
+έγινε επιτυχώς, διαφορετικά κάποιον αντίστοιχο κωδικό σφάλματος.
+</div>
+<div>
+  <br>
+  <span style="font-family: Courier New;"><br>
+  <font size="4"><span style="font-family: Verdana;">int RMM_GetFirstRec()</span></font></span><br>
+  <span style="font-family: Courier New;"><br>
+  <span style="font-family: Verdana;">int RMM_GetFirstRec(</span></span>
+</div>
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;int fileDesc, /* αναγνωριστικός αριθμός ανοιχτού αρχείου */
+</div>
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;char *record, /* ενδιάμεση μνήμη για την εγγραφή */
+</div>
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;int recordSize /* μέγεθος της κάθε εγγραφής του αρχείου */
+</div>
+<div style="font-family: Courier New;">
+  <span style="font-family: Verdana;">)</span><br>
+</div>
+<div>
+  <br> Η ρουτίνα αυτή διαβάζει στην ενδιάμεση μνήμη record την
+εγγραφή που αντιστοιχεί στην πρώτη διαθέσιμη και προέρχεται από το
+ανοιχτό αρχείο με αναγνωριστικό αριθμό fileDesc. Κάθε εγγραφή στο
+αρχείο έχει μέγεθος recordSize. Επιστρέφει HFE_OK αν η εγγραφή
+ανακτήθηκε επιτυχώς ή τον αντίστοιχο κωδικό σφάλματος.
+</div>
+<div>
+  <br>
+  <span style="font-family: Courier New;"><br>
+  <font size="4"><span style="font-family: Verdana;">int RMM_GetNextRec()</span></font></span><br>
+  <span style="font-family: Courier New;"><br>
+  <span style="font-family: Verdana;">int RMM_GetNextRec(</span></span>
+</div>
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;int fileDesc, /* αναγνωριστικός αριθμός ανοιχτού αρχείου */
+</div>
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;int recId, /* αναγνωριστικό της εγγραφής μετά την οποία ξεκινά η αναζήτηση */
+</div>
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;char *record, /* ενδιάμεση μνήμη για την εγγραφή */
+</div>
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;int recordSize /* μέγεθος της κάθε εγγραφής του αρχείου */
+</div>
+<div style="font-family: Courier New;">
+  <span style="font-family: Verdana;">)</span><br>
+</div>
+<div>
+  <br> Η ρουτίνα αυτή διαβάζει από το ανοιχτό αρχείο με
+αναγνωριστικό αριθμό fileDesc στην ενδιάμεση μνήμη record την πρώτη
+έγκυρη εγγραφή που υπάρχει μετά από αυτήν με αναγνωριστικό αριθμό
+recId. Το μέγεθος κάθε εγγραφής του αρχείου δίνεται από το recordSize.
+Επιστρέφει HFE_OK αν η επόμενη εγγραφή ανακτήθηκε επιτυχώς ή αντίστοιχο
+κωδικό σφάλματος. Για την εγγραφή recId δε γίνεται κανένας έλεγχος
+εγκυρότητας.
+</div>
+<div>
+  <br>
+  <span style="font-family: Courier New;"><br>
+  <font size="4"><span style="font-family: Verdana;">int RMM_GetThisRec()</span></font></span><br>
+  <span style="font-family: Courier New;"><br>
+  <span style="font-family: Verdana;">int RMM_GetThisRec(</span></span>
+</div>
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;int fileDesc, /* αναγνωριστικός αριθμός ανοιχτού αρχείου */
+</div>
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;int recId, &nbsp; &nbsp;/* αναγνωριστικός αριθμός της εγγραφής που ζητήθηκε */
+</div>
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;char* record, /* ενδιάμεση μνήμη για την εγγραφή */
+</div>
+<div style="font-family: Courier New;">
+  &nbsp;&nbsp; &nbsp;int recordSize /* μέγεθος της κάθε εγγραφής του αρχείου */
+</div>
+<div style="font-family: Courier New;">
+  <span style="font-family: Verdana;">)</span><br>
+</div>
+<br>Η ρουτίνα διαβάζει από το ανοιχτό αρχείο με αναγνωριστικό αριθμό
+fileDesc την εγγραφή με αναγνωριστικό recId. Η εγγραφή αποθηκεύεται
+στην ενδιάμεση μνήμη record. Το μέγεθος της κάθε εγγραφής του αρχείου
+είναι recordSize. Επιστρέφει HFE_OK αν η εγγραφή ανακτήθηκε επιτυχώς ή
+αντίστοιχο κωδικό σφάλματος.<br>
+<br>
+<br>
+<h2>
+  Σχόλια για την Υλοποίηση
+</h2>
+Κάθε αρχείο του επιπέδου Αρχείου Εγγραφών θα πρέπει να υλοποιηθεί
+χρησιμοποιώντας τις ρουτίνες του επιπέδου Αρχείου Μπλοκ (BF) που έχετε
+υλοποιήσει. (Αν δεν νιώθετε άνετα με την δική σας υλοποίηση θα σας
+δώσουμε εμείς.) Κάθε αναγνωριστικό εγγραφής αναγνωρίζει μοναδικά μια
+εγγραφή μέσα σε ένα αρχείο - αυτό θα χρησιμοποιηθεί και στα παραπάνω
+επίπεδα του λογισμικού. Είναι απλά ένας ακέραιος ο οποίος συνδυάζει το
+μπλοκ και τη θέση μέσα στο μπλοκ όπου βρίσκεται η εγγραφή. Εσείς θα
+αποφασίσετε πώς να δομήσετε εσωτερικά κάθε μπλοκ (κεφαλίδα, εγγραφές,
+πίνακα μπιτ, κτλ.), οπότε εσείς θα πρέπει να αποφασίσετε και για τη
+μορφή του αναγνωριστικού εγγραφών.<br>
+Όταν εισάγετε μια καινούργια εγγραφή, <i>να μην</i>
+σαρώνεται σειριακά όλο το αρχείο για να βρείτε μια άδεια θέση για να
+βάλετε την εγγραφή. Φροντίστε να υλοποιήσετε κάτι πιό έξυπνο και
+αποδοτικό.<br>
+<p> Να επισημάνουμε και πάλι ότι τα παραπάνω είναι οδηγίες αλλά όχι
+υποχρεωτικές. Εσείς μπορείτε να υλοποιήσετε τα πράγματα διαφορετικά αν
+θέλετε. Οι διεπαφές των ρουτινών και η λειτουργικότητά τους είναι τα
+μόνα πράγματα που δεν μπορείτε να αλλάξετε.
+</p>
+<hr>
+<h2>
+  <img src="RMM_files/MISSING.html"> Σχολιασμός, Έλεγχος Σφαλμάτων, και Γενική Μορφοποίηση
+</h2>Όπως πάντοτε, αναμένεται καλός σχολιασμός του προγράμματος, και
+εσωτερικός (ανάμεσα στις γραμμές κώδικα) και εξωτερικός (στην αρχή κάθε
+ρουτίνας). Ένας γενικός κανόνας είναι να σχολιάζετε τα προγράμματά σας
+σαν να πρόκειται να τα δώσετε σε κάποιον άλλον ο οποίος θα τα
+επεκτείνει και ο οποίος δεν έχει ιδέα για το τι κάνατε όταν τα γράφατε
+(και δεν μπορεί ούτε να σας βρει να σας ρωτήσει).
+<p> Επίσης, θα πρέπει να ελέγχετε για διάφορα σφάλματα που μπορούν να
+προκύψουν και να βεβαιωθείτε ότι ο κώδικάς σας τερματίζει ομαλά, με
+μηνύματα που έχουν νόημα, σε όλες τις εισόδους που ικανοποιούν την
+παραπάνω περιγραφή.
+</p>
+<hr>
+<h2>
+  <img src="RMM_files/MISSING.html">Διαδικαστικές Λεπτομέρειες
+</h2>Το τί ακριβώς θα παραδώσετε, πού θα βρείτε τα αρχεία με τα οποία
+θα ελέγξετε τελικά το πρόγραμμά σας, κτλ., θα ανακοινωθεί σύντομα.
+<p> Τα προγράμματά σας θα πρέπει να δουλεύουν στα μηχανήματα του
+τμήματος (είτε στα sun (Linux) είτε στα pc (Windows)) ώστε να μπορούν
+να ελεγχθούν. Ακόμη και αν δουλέψετε σε δικούς σας υπολογιστές θα
+πρέπει να βεβαιωθείτε ότι το τελικό αποτέλεσμα δουλεύει και εδώ τοπικά.
+Η έκδοση της C που θα χρησιμοποιήσετε πρέπει να έχει ακέραιους των 4
+bytes και να επιτρέπει αλλαγή ερμηνείας τύπου δεδομένων (type casting).
+</p>
+<hr size="2"><br>
+<br></body></html>

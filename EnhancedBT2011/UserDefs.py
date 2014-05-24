@@ -1,0 +1,15 @@
+PieceSize=512*1024   	#0.5 MB
+Run=True		#Runflag
+FileMd5=0
+UnchokeInterval=10
+PeerListReqInterval=20
+MaxPendingReq=5
+ActiveSetSize=40
+RecentUnchokeInterval=20  
+RegularUnchokedNum=3
+AgedRequestLimit=500
+RandomChunks=3
+TrackerTimeout=100
+SendTimeout=25
+RecvTimeout=25
+SelectTimeout=0.25

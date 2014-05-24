@@ -1,0 +1,15 @@
+#
+# Makefile for parallelsum
+#
+
+all: parallelsum
+
+clean:		
+		rm -f parallelsum *.o
+
+parallelsum:	parallelsum.c list.c
+		gcc -o parallelsum parallelsum.c list.c -pthread
+
+
+
+

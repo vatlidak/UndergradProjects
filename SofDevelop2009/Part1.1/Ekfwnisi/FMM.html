@@ -1,0 +1,1037 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="pageview"><head>
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- base -->
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  
+
+  
+    .writely-callout-data {
+      display: none;
+      *display: inline-block;
+      *width: 0;
+      *height: 0;
+      *overflow: hidden;
+    }
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    
+    .editor .writely-comment-yellow {
+      background-color: #FF9;
+      background-position: -240px 0;
+    }
+    .editor .writely-comment-yellow-hover {
+      background-color: #FF0;
+      background-position: -224px 0;
+    }
+    .editor .writely-comment-blue {
+      background-color: #C0D3FF;
+      background-position: -16px 0;
+    }
+    .editor .writely-comment-blue-hover {
+      background-color: #6292FE;
+      background-position: 0 0;
+    }
+    .editor .writely-comment-orange {
+      background-color: #FFDEAD;
+      background-position: -80px 0;
+    }
+    .editor .writely-comment-orange-hover {
+      background-color: #F90;
+      background-position: -64px 0;
+    }
+    .editor .writely-comment-green {
+      background-color: #99FBB3;
+      background-position: -48px 0;
+    }
+    .editor .writely-comment-green-hover {
+      background-color: #00F442;
+      background-position: -32px 0;
+    }
+    .editor .writely-comment-cyan {
+      background-color: #CFF;
+      background-position: -208px 0;
+    }
+    .editor .writely-comment-cyan-hover {
+      background-color: #0FF;
+      background-position: -192px 0;
+    }
+    .editor .writely-comment-purple {
+      background-color: #EBCCFF;
+      background-position: -144px 0;
+    }
+    .editor .writely-comment-purple-hover {
+      background-color: #90F;
+      background-position: -128px 0;
+    }
+    .editor .writely-comment-magenta {
+      background-color: #FCF;
+      background-position: -112px 0;
+    }
+    .editor .writely-comment-magenta-hover {
+      background-color: #F0F;
+      background-position: -96px 0;
+    }
+    .editor .writely-comment-red {
+      background-color: #FFCACA;
+      background-position: -176px 0;
+    }
+    .editor .writely-comment-red-hover {
+      background-color: #FF7A7A;
+      background-position: -160px 0;
+    }
+
+    .editor .writely-comment-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      padding-right: 11px;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      -moz-user-select: none;
+    }
+
+    .editor .writely-comment-hidden {
+      padding: 0;
+      background: none;
+    }
+    .editor .writely-comment-marker-hidden {
+      background: none;
+      padding: 0;
+      width: 0;
+    }
+    .editor .writely-comment-none {
+      opacity: .2;
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+      -moz-opacity: .2;
+    }
+    .editor .writely-comment-none-hover {
+      opacity: .2;
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+      -moz-opacity: .2;
+    }
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>K25 Ανάπτυξη Λογισμικού FMM</title>
+
+</head><body>
+    
+    
+    
+<div style="text-align: center;">
+  <h1>
+    Πληροφορική &amp; Τηλεπικοινωνίες K25<br>
+    Ανάπτυξη Λογισμικού<br>
+    Χειμερινό Εξάμηνο 2009-10<br>
+    Καθηγητής Γιάννης Ιωαννίδης
+  </h1>
+</div>
+<p>
+</p>
+<hr> <center>
+<h1>
+  Μέρος 1ο, 1/3: Μονάδα διαχείρισης αρχείων και σκληρού δίσκου.<br>
+</h1>
+<h3>
+  (Ημερομηνία Παράδοσης: Τρίτη, 20/10/2009, 17:00)
+</h3>
+</center>
+<div style="text-align: center;">
+  <br>
+  <br>
+  <img src="FMM_files/drawing_snTqL4lRg5wNfLcR_A-TMdA_97.png"><br>
+  <br>
+  <br>
+  <div style="text-align: left;">
+    <font size="5"><font size="4"><i><b>Λειτουργίες σκληρού δίσκου - HDF</b></i><i><b> (Hard disc functionality</b></i></font><i><b><font size="4">)</font><br>
+    </b></i></font><hr size="2">
+  </div>
+  <h2 style="text-align: left;">
+    Εισαγωγή
+  </h2>
+  <div style="text-align: left;">
+Το επίπεδο Λειτουργιών Σκληρού Δίσκου (HDF) υλοποιεί μια Διεπαφή
+Προγραμματισμού Εφαρμογών που επιτρέπει στα πιο πάνω επίπεδα να
+επικοινωνούν με το σκληρό δίσκο έχοντας σαν μονάδα επικοινωνίας το
+μπλοκ (block). Το συγκεκριμένο επίπεδο είναι το πιο χαμηλό στην
+ιεραρχία. Έχει συναρτήσεις για το άνοιγμα, κλείσιμο, δημιουργία,
+διαγραφή και έλεγχο ύπαρξης ενός αρχείου. Τα πιο πάνω επίπεδα
+χρησιμοποιούν τις συναρτήσεις αυτές για την επικοινωνία με τα φυσικά
+αρχεία στο δίσκο.<br>
+    <br>
+Οι ρουτίνες της συγκεκριμένης διεπαφής περιγράφονται παρακάτω. Τα
+ονόματα όλων των ρουτινών αρχίζουν με το πρόθεμα HDF, ώστε να
+υποδεικνύουν το γεγονός ότι πρόκειται για υλοποίηση αρχείου σε επίπεδο
+λειτουργιών σκληρού δίσκου (HDF = Hard Disc Functionality). H γλώσσα
+υλοποίησης είναι η C.<br>
+    <br>
+Οι περισσότερες ρουτίνες επιστρέφουν έναν ακέραιο αριθμό, όπου αρνητική
+τιμή σημαίνει ότι έχει προκύψει κάποιο σφάλμα. Υπάρχουν διάφοροι
+κωδικοί σφαλμάτων στο επίπεδο HDF, οι οποίοι περιγράφονται στο τέλος
+της εκφώνησης.<br>
+    <br>
+Επίσης, το επίπεδο είναι υπεύθυνο και για την επικοινωνία με το δίσκο
+σε ακέραιες μονάδες block. Συγκεκριμένα, αναλαμβάνει το διάβασμα και
+την εγγραφή συγκεκριμένων block σε ένα αρχείο σε θέσεις που του έχουν
+υποδειχτεί. Οι ενέργειες αυτές πραγματοποιούνται με ολόκληρα blocks και
+πρέπει να ολοκληρώνονται επιτυχώς για τη μονάδα αυτή. Οι ρουτίνες αυτές
+δεν πραγματοποιούν κανέναν απολύτως έλεγχο εσωτερικά, τον οποίο αφήνουν
+για τα πιο πάνω επίπεδα.<br>
+  </div>
+  <div style="text-align: left;">
+    <br>
+  </div>
+  <div style="text-align: left;">
+    <br>
+  </div>
+  <hr>
+  <div style="text-align: center;">
+    <div style="text-align: left;">
+      <font size="4"><b>Ρουτίνες Υλοποίησης της διεπαφής σκληρού δίσκου&nbsp;</b></font>
+    </div>
+    <div style="text-align: left;">
+      <font style="font-family: Courier New;" size="4"><br>
+      </font><font style="font-family: Courier New;" size="4">HDF_OpenFile()</font><br>
+      <font style="font-family: Courier New;" size="4"><br>
+      <font size="2"><span style="font-family: Courier New;">int HDF_OpenFile(</span><br style="font-family: Courier New;">
+      <span style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;char* fileName, </span><br style="font-family: Courier New;">
+      <span style="font-family: Courier New;">&nbsp;&nbsp; &nbsp;FILE** file);</span></font></font><font size="2"><br style="font-family: Courier New;">
+      </font><br>
+Ανοίγει το αρχείο με όνομα fileName και θέτει το αναγνωριστικό του
+αρχείου από το λειτουργικό σύστημα στη μεταβλητή file. Επιστρέφει
+BFE_OK ή κωδικό σφάλματος.<br>
+    </div>
+    <div style="text-align: left;">
+      <b><br>
+      </b><span style="font-family: Courier New;"><br>
+      </span><font size="4"><span style="font-family: Courier New;">HDF_CloseFile()<br>
+      <br>
+      </span></font><span style="font-family: Courier New;">int HDF_CloseFile(<br>
+      &nbsp;&nbsp; &nbsp;FILE* file);</span><br>
+      <br>
+      Κλείνει το αρχείο που δίνεται ως παράμετρος. Επιστρέφει BFE_OK ή κωδικό σφάλματος.
+    </div>
+    <div style="text-align: left;">
+      <b><br>
+      <br>
+      </b><font style="font-family: Courier New;" size="4">HDF_CreateFile</font><font size="4"><span style="font-family: Courier New;">()<br>
+      <br>
+      </span></font><font size="2"><span style="font-family: Courier New;">int HDF_CreateFile(<br>
+      &nbsp;&nbsp; &nbsp;char* fileName);</span></font><br>
+    </div>
+    <div style="text-align: left;">
+      <br>
+      Δημιουργεί ένα νέο αρχείο με όνομα fileName. Επιστρέφει BFE_OK ή κωδικό σφάλματος.<br>
+      <br>
+      <br>
+      <font size="4"><span style="font-family: Courier New;">HDF_DestroyFile()</span></font><br>
+      <br>
+      <font size="2"><span style="font-family: Courier New;">int HDF_DestroyFile(<br>
+      &nbsp;&nbsp; &nbsp;char* fileName);</span></font>
+    </div>
+    <div style="text-align: left;">
+      <br>
+      Διαγράφει το αρχείο με όνομα fileName από το δίσκο. Επιστρέφει BFE_OK ή κωδικό σφάλματος.<br>
+      <br>
+      <br>
+      <font size="4"><span style="font-family: Courier New;">HDF_ExistsFile()</span></font><br>
+      <br>
+      <span style="font-family: Courier New;">BOOLEAN HDF_ExistsFile(<br>
+      &nbsp;&nbsp; &nbsp;char* fileName);<br>
+      <br>
+      </span>
+    </div>
+    <div style="text-align: left;">
+      Ελέγχει αν το αρχείο με όνομα fileName υπάρχει ήδη. Επιστρέφει TRUE αν υπαρχει, FALSE διαφορετικά.<br>
+      <br>
+      <br>
+      <font size="4"><span style="font-family: Courier New;">HDF_ReadBlock()<br>
+      <br>
+      </span></font><font size="2"><span style="font-family: Courier New;">int HDF_ReadBlock(<br>
+      &nbsp;&nbsp; &nbsp;int blockIndex ,<br>
+      &nbsp;&nbsp; &nbsp;char* blockBuf,<br>
+      &nbsp;&nbsp; &nbsp;FILE* file);</span></font>
+    </div>
+    <div style="text-align: left;">
+      <br>
+Διαβάζει το block με αριθμό blockIndex από το αρχείο file. Το
+περιεχόμενο που διαβάστηκε τοποθετείται στη μεταβλητή blockBuf.
+Επιστρέφει BFE_OK ή κωδικό σφάλματος.<br>
+      <br>
+      <br>
+    </div>
+    <div style="text-align: left;">
+      <div style="text-align: left;">
+        <font size="4"><span style="font-family: Courier New;">HDF_WriteBlock()<br>
+        <br>
+        </span></font><font size="2"><span style="font-family: Courier New;">int HDF_WriteBlock(<br>
+        &nbsp;&nbsp; &nbsp;int blockIndex,<br>
+        &nbsp;&nbsp; &nbsp;char* blockBuf,<br>
+        &nbsp;&nbsp; &nbsp;FILE* file);</span></font><br>
+      </div>
+      <br>
+Γράφει το περιεχόμενο της μεταβλητής blockBuf στη θέση που υποδεικνύει
+ο αριθμός blockIndex του αρχείου file. Επιστρέφει BFE_OK ή κωδικό
+σφάλματος. </div>
+    <div style="text-align: left;">
+      <i><font size="6"><b><font size="3">&nbsp;<br>
+      <br>
+      </font><font size="4">Μονάδα διαχείρισης αρχείων - FΜ</font></b></font></i><font size="4"><i><b>M (File Management Module</b></i><i><b>)</b></i></font>
+    </div>
+  </div>
+</div>
+<hr size="2"><br>
+<div style="text-align: center;">
+  <h2 style="text-align: left;">
+    Εισαγωγή
+  </h2>
+  <div style="text-align: left;">
+Η μονάδα διαχείρισης αρχείων (FMM) υλοποιεί μια Διεπαφή Προγραμματισμού
+Εφαρμογών που αναλαμβάνει τη διαχείριση των αρχείων που έχουν ζητηθεί
+από το πιο πάνω επίπεδο χρησιμοποιώντας τις συναρτήσεις του HDF
+επιπέδου για την υλοποίηση της λειτουργικότητάς του.<br>
+    <br>
+Το FMM περιλαμβάνει συναρτήσεις για τη διαχείριση αρχείων στη μνήμη και
+διατηρεί πληροφορία σχετικά με τα ανοιχτά αρχεία. Επιτρέπει, κατ' αυτό
+τον τρόπο το πολλαπλό άνοιγμα του ίδιου αρχείου, παρέχοντας ένα εύκολο
+τρόπο για την πραγματοποίηση ενεργειών πάνω τους.<br>
+    <br>
+Επίσης, το πρώτο μπλοκ ενός αρχείου (π.χ., μπλοκ υπ΄ αριθμόν 0) θα
+πρέπει να χρησιμοποιηθεί ως μπλοκ κεφαλίδα ώστε να αποθηκεύονται εκεί
+διάφορα δεδομένα του αρχείου που κρίνονται χρήσιμα για το επίπεδο αυτό.
+Το μπλοκ αυτό δεν είναι ορατό από τα πιο πάνω επίπεδα.<br>
+    <br>
+    <div style="text-align: center;">
+      <img src="FMM_files/drawing_sDAsW2JDui1vk8c4opAmWeA_178.png"><br>
+      <br>
+    </div>
+Οι ρουτίνες της συγκεκριμένης διεπαφής περιγράφονται παρακάτω. Τα
+ονόματα όλων των ρουτινών αρχίζουν με το πρόθεμα FMM, ώστε να
+υποδεικνύουν το γεγονός ότι πρόκειται για υλοποίηση αρχείου σε επίπεδο
+διαχείρισης αρχείων (FMM = File Management Module). H γλώσσα υλοποίησης
+είναι η C.<br>
+    <br>
+Οι περισσότερες ρουτίνες επιστρέφουν έναν ακέραιο αριθμό, όπου αρνητική
+τιμή σημαίνει ότι έχει προκύψει κάποιο σφάλμα. Υπάρχουν διάφοροι
+κωδικοί σφαλμάτων στο επίπεδο FMM, οι οποίοι περιγράφονται στο τέλος
+της εκφώνησης.<br>
+    <br>
+    <div style="text-align: left;">
+      <br>
+    </div>
+    <hr>
+    <div style="text-align: left;">
+      <font size="4"><b>Ρουτίνες Υλοποίησης της διεπαφής διαχείρισης αρχείων.<br>
+      </b></font>
+    </div>
+    <br>
+  </div>
+  <br>
+  <div style="text-align: left;">
+    <font size="4"><span style="font-family: Courier New;">FMM_Init()<br>
+    <br>
+    </span></font>
+  </div>
+</div>
+<div>
+  <span style="font-family: Courier New;">void FMM_Init();</span><br>
+  <br>
+</div>
+<div> Αρχικοποιεί τις εσωτερικές δομές που χρησιμοποιεί η μονάδα
+διαχείρισης αρχείων. Αυτές περιλαμβάνουν περιγραφείς / αναγνωριστικά
+αρχείων (του λειτουργικού συστήματος ή του FMM), ονόματα αρχείων κ.λπ.<br>
+</div>
+<br>
+<br>
+<br>
+<font size="4"><span style="font-family: Courier New;">FMM_Open()<br>
+<br>
+</span></font><span style="font-family: Courier New;">int FMM_Open(<br>
+&nbsp;&nbsp; &nbsp;char* fileName);</span><br>
+<div>
+  <br> Ανοίγει το αρχείο με όνομα fileName, καλώντας την
+αντίστοιχη συνάρτηση του HDF επιπέδου. Για το ανοιχτό αρχείο, τοποθετεί
+τις πληροφορίες που το αφορούν ώστε να αναγνωρίζεται σε μία διαθέσιμη
+θέση στον πίνακα ανοιχτών αρχείων. Διαβάζει επίσης την κεφαλίδα του
+αντίστοιχου αρχείου, εφόσον αυτή δεν υπάρχει ήδη στη μνήμη. Επιστρέφει
+το αναγνωριστικό αρχείου (fileDescriptor) ή τον αντίστοιχο κωδικό
+σφάλματος.<br>
+Ένα αρχείο μπορεί να έχει ανοιχτεί παραπάνω από μία φορές. Θα πρέπει να
+κρατάτε στην μνήμη έναν πίνακα για όλα τα ανοιχτά αρχεία. Ο ακέραιος
+που επιστρέφει η<i> FMM_Open()</i>
+είναι ο αριθμός της θέσης του πίνακα που αντιστοιχεί στο αρχείο αυτό.
+Σ' αυτόν τον πίνακα θα κρατάτε ο,τιδήποτε σχετικό κρίνετε ότι πρέπει να
+είναι άμεσα διαθέσιμο για κάθε ανοιχτό αρχείο (π.χ., γενικές
+πληροφορίες για το αρχείο από το μπλοκ-κεφαλίδα του, το αναγνωριστικό
+του αρχείου έτσι όπως έχει ανοιχθεί από το λειτουργικό σύστημα, κτλ. -
+χωρίς τα παραπάνω να θεωρούνται απαραίτητα). Μπορείτε να υποθέσετε ότι
+οποιαδήποτε στιγμή δεν θα υπάρχουν περισσότερα από <i>MAXOPENFILES</i> = 25 ανοιχτά αρχεία.<br>
+  <b><br>
+  </b><span style="font-family: Courier New;"><br>
+  </span><font size="4"><span style="font-family: Courier New;">FMM_Close()<br>
+  <br>
+  </span></font><span style="font-family: Courier New;">int FMM_Close(<br>
+  &nbsp;&nbsp; &nbsp;int fileDesc);</span><br>
+</div>
+<div>
+  <br> Κλείνει το αρχείο με αναγνωριστικό fileDesc και το αφαιρεί
+από τον πίνακα ανοικτών αρχείων. Γράφει την κεφαλίδα πίσω στο αρχείο,
+αν έχουν γίνει αλλαγές σε αυτή.
+</div>
+<div>
+  <font size="4"><span style="font-family: Courier New;"><br>
+  <br>
+  FMM_IsOpen()<br>
+  <br>
+  </span></font><span style="font-family: Courier New;">BOOLEAN FMM_IsOpen(<br>
+  &nbsp;&nbsp; &nbsp;char* fileName);</span><br>
+</div>
+<div>
+  <br>
+  Ελέγχει αν το αρχείο με όνομα fileName υπάρχει στον πίνακα των ανοιχτών αρχείων. Επιστρέφει TRUE ή FALSE.
+</div>
+<div>
+  <font size="4"><span style="font-family: Courier New;"><br>
+  <br>
+  FMM_IsValid()<br>
+  <br>
+  </span></font><span style="font-family: Courier New;">BOOLEAN FMM_IsValid(<br>
+  &nbsp;&nbsp; &nbsp;int fileDesc);</span><br>
+</div>
+<div>
+  <br> Ελέγχει αν το συγκεκριμένο αναγνωριστικό αρχείου είναι
+σωστό (εντός ορίων, αντιστοιχεί σε θέση μνήμης ανοιχτού αρχείου etc).
+Επιστρέφει TRUE ή FALSE.
+</div>
+<font size="4"><span style="font-family: Courier New;"><br>
+<br>
+FMM_GetFileInfoByName()<br>
+<br>
+</span></font>
+<div>
+  <span style="font-family: Courier New;">int FMM_GetFileInfoByName(<br>
+  &nbsp;&nbsp; &nbsp;fileInfo_t* finfo);</span><br>
+</div>
+<div>
+  <br> Ψάχνει στον πίνακα των ανοιχτών αρχείων με βάση το όνομα
+που έχει δοθεί ως παράμετρος μέσω του finfo. Γεμίζει το finfo με τις
+υπόλοιπες πληροφορίες που αφορούν στο συγκεκριμένο αρχείο: το
+αναγνωριστικό του αρχείου όπως δίνεται από το λειτουργικό και το fd.
+Επιστρέφει BFE_OK ή κωδικό σφάλματος. Η δομή <span style="font-family: Courier New;">fileInfo_t <span style="font-family: Verdana;">περιγράφεται παρακάτω.</span><br>
+  </span>
+</div>
+<div>
+  <font size="4"><span style="font-family: Courier New;"><br>
+  <br>
+  FMM_GetFileInfoByFD()</span></font><br>
+  <br>
+  <span style="font-family: Courier New;">int FMM_GetFileInfoByFD(<br>
+  &nbsp;&nbsp; &nbsp;fileInfo_t* finfo);</span><br>
+</div>
+<div>
+  <br> Ψάχνει στον πίνακα των ανοιχτών αρχείων με βάση το
+αναγνωριστικό ανοικτού αρχείου που έχει δοθεί ως παράμετρος εντός του
+struct. Γεμίζει το struct με τις υπόλοιπες πληροφορίες που αφορούν στο
+συγκεκριμένο αρχείο: το αναγνωριστικό του αρχείου όπως δίνεται από το
+λειτουργικό και το όνομα του αρχείου. Επιστρέφει BFE_OK ή κωδικό
+σφάλματος.
+</div>
+<div>
+</div>
+<div>
+  <font size="4"><span style="font-family: Courier New;"><br>
+  <br>
+  FMM_HEAD_IsValid()<br>
+  <br>
+  </span></font><span style="font-family: Courier New;">BOOLEAN FMM_HEAD_IsValid(<br>
+  &nbsp;&nbsp; &nbsp;int fileDesc,<br>
+  &nbsp;&nbsp; &nbsp;int blockNum);</span><br>
+</div>
+<div>
+  <br> Ελέγχει από το header του ανοιχτού αρχείου με
+αναγνωριστικό fileDesc, αν το μπλοκ που αντιστοιχεί θέση blockNum είναι
+έγκυρο. Επιστρέφει TRUE ή FALSE.
+</div>
+<div>
+  <font size="4"><span style="font-family: Courier New;"><br>
+  <br>
+  FMM_HEAD_GetFirstBlock()<br>
+  <br>
+  </span></font><span style="font-family: Courier New;">int FMM_HEAD_GetFirstBlock(<br>
+  &nbsp;&nbsp; &nbsp;int fileDesc);</span><br>
+</div>
+<div>
+  <br> Ψάχνει στην κεφαλίδα του ανοιχτού αρχείου με αναγνωριστικό
+fileDesc και επιστρέφει τον αριθμό εκείνο που αντιστοιχεί στο πρώτο
+έγκυρο block. Επιστρέφει BFE_OK ή κωδικό σφάλματος σε περίπτωση λάθους.
+</div>
+<div>
+  <font size="4"><span style="font-family: Courier New;"><br>
+  <br>
+  FMM_HEAD_GetNextBlock()<br>
+  <br>
+  </span></font><span style="font-family: Courier New;">int FMM_HEAD_GetNextBlock(<br>
+  &nbsp;&nbsp; &nbsp;int fileDesc,<br>
+  &nbsp;&nbsp; &nbsp;int prev);</span><br>
+</div>
+<div>
+  <br> Ψάχνει στην κεφαλίδα του ανοιχτού αρχείου με αναγνωριστικό
+fileDesc και επιστρέφει τον αριθμό που αντιστοιχεί στο πρώτο έγκυρο
+block, μετά το block της θέσης prev. Δεν γίνεται κανένας έλεγχος για το
+prev block. Επιστρέφει κωδικό σφάλματος σε περίπτωση λάθους.
+</div>
+<div>
+  <font size="4"><span style="font-family: Courier New;"><br>
+  <br>
+  FMM_HEAD_GetFirstEmpty()<br>
+  <br>
+  </span></font><span style="font-family: Courier New;">int FMM_HEAD_GetFirstEmpty(<br>
+  &nbsp;&nbsp; &nbsp;int fileDesc);</span><br>
+</div>
+<div>
+  <br> Ψάχνει στην κεφαλίδα του ανοιχτού αρχείου με αναγνωριστικό
+fileDesc και επιστρέφει τον αριθμό που αντιστοιχεί στο πρώτο *μη*
+έγκυρο (άδειο / μη χρησιμοποιούμενο) block.
+</div>
+<div>
+  <b><br>
+  <br>
+  </b><font size="4"><span style="font-family: Courier New;">FMM_HEAD_Set()<br>
+  <br>
+  </span></font><span style="font-family: Courier New;">int FMM_HEAD_Set(<br>
+  &nbsp;&nbsp; &nbsp;int fileDesc,<br>
+  &nbsp;&nbsp; &nbsp;int blockNum,<br>
+  &nbsp;&nbsp; &nbsp;BOOLEAN value);</span><br>
+</div>
+<div>
+  <br> Θέτει στην κεφαλίδα του ανοιχτού αρχείου με αναγνωριστικό
+fileDesc την τιμή που αντιστοιχεί στο μπλοκ με αριθμό blockNum σε
+value, για να ξέρει αν είναι valid ή όχι. Επιστρέφει κωδικό σφάλματος ή
+BFE_OK.
+</div>
+<br>
+<hr size="2"><br>
+<b><font size="4">Δομές δεδομένων</font></b><br>
+<br>
+Επειδή η C δεν έχει τύπο boolean, ορίζουμε το παρακάτω απαριθμητικό:<br>
+typedef enum {<br>
+&nbsp;&nbsp;&nbsp; FALSE = 0,<br>
+&nbsp;&nbsp;&nbsp; TRUE = 1<br>
+}BOOLEAN;<br>
+<br>
+Οι πληροφορίες που αφορούν ένα αρχείο ορίζονται με την παρακάτω δομή:<br>
+typedef struct{<br>
+&nbsp;&nbsp; &nbsp;char filename[MAX_FILE_NAME];<br>
+&nbsp;&nbsp; &nbsp;FILE* fp;<br>
+&nbsp;&nbsp; &nbsp;int fd;<br>
+}fileInfo_t;<br>
+<br>
+<br>
+<b><font size="4">Κωδικοί λαθών&nbsp;&nbsp;</font></b><br>
+<br>#define BFE_OK &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;0&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;/* OK */<br>
+#define BFE_NOMEM&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Δεν υπάρχει διαθέσιμη
+μνήμη */<br>
+#define BFE_CANNOTOPENFILE&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; -2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Αδύνατο το
+άνοιγμα του αρχείου */<br>
+#define
+BFE_CANNOTCLOSEFILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Αδύνατο το κλείσιμο του αρχείου */<br>
+#define BFE_CANNOTCREATEFILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Αδύνατη η δημιουργία του αρχείου */<br>
+#define
+BFE_INCOMPLETEREAD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Ημιτελές διάβασμα */<br>
+#define
+BFE_INCOMPLETEWRITE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Ημιτελές γράψιμο */<br>
+#define
+BFE_FILEEXISTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Το αρχείο υπάρχει ήδη */<br>
+#define
+BFE_NOBUF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Έλλειψη χώρου στην ενδιάμεση
+μνήμη */<br>
+#define
+BFE_FILEOPEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-10&nbsp;&nbsp;&nbsp;&nbsp; /* Το αρχείο είναι ήδη ανοιχτό */<br>
+#define
+BFE_FD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-11&nbsp;&nbsp;&nbsp;&nbsp; /* Λανθασμένο αναγνωριστικό αρχείου */<br>
+#define
+BFE_FILENOTEXISTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-12&nbsp;&nbsp;&nbsp; /* Το αρχείο δεν υπάρχει */<br>
+#define
+BFE_FTABFULL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-13&nbsp;&nbsp;&nbsp; /* Λίστα ανοιχτών αρχείων πλήρης */<br>
+#define
+BFE_HEADOVERFLOW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-14&nbsp;&nbsp;&nbsp; /* Λανθασμένος αριθμός&nbsp; */<br>
+#define
+BFE_BLOCKFIXED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-15&nbsp;&nbsp;&nbsp; /* Μπλοκ ήδη "καρφωμένο" στη μνήμη */<br>
+#define
+BFE_BLOCKUNFIXED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-16&nbsp;&nbsp;&nbsp; /* Μπλοκ ήδη ξεκαρφωμένο */<br>
+#define
+BFE_EOF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-17&nbsp;&nbsp;&nbsp; /* Τέλος αρχείου */<br>
+#define BFE_FILEHASFIXEDBLOCKS&nbsp;&nbsp;&nbsp; -18&nbsp;&nbsp;&nbsp; /* Το αρχείο έχει καρφωμένα block */<br>
+#define
+BFE_BLOCKFREE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-19&nbsp;&nbsp; /* Μπλοκ ήδη διαθέσιμο προς ανακύκλωση */<br>
+#define
+BFE_BLOCKINBUF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-20&nbsp;&nbsp; /* Μπλοκ ήδη στη μνήμη */<br>
+#define BFE_BLOCKNOTINBUF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -21&nbsp;&nbsp; /* Μπλοκ όχι στη μνήμη */<br>
+#define
+BFE_INVALIDBLOCK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-22&nbsp;&nbsp; /* Λανθασμένος κωδικός block */<br>
+#define BFE_CANNOTDESTROYFILE&nbsp;&nbsp; &nbsp; -23&nbsp;&nbsp; /* Αδύνατη η καταστροφή του αρχείου */<br>
+<br>
+#define
+BF_BUFFER_SIZE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Μέγεθος της ενδιάμεσης μνήμης
+σε block */<br>
+#define
+MAXOPENFILES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Μέγιστο πλήθος ανοιχτών
+αρχείων */<br>
+#define
+BF_BLOCK_SIZE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1024&nbsp;&nbsp;&nbsp; /* Μέγεθος ενός block σε bytes */<br>
+#define
+MAX_BLOCKS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8192&nbsp;&nbsp;&nbsp;&nbsp; /* Μέγιστο πλήθος από διαθέσιμα block ανά
+αρχείο */<br>
+#define
+MAX_FILE_NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+256&nbsp;&nbsp;&nbsp;&nbsp; /* Μέγιστο μέγεθος για όνομα ενός αρχείου */<br>
+<br>
+<h2>
+  Σχόλια για την Υλοποίηση
+</h2>
+<span style="color: rgb(0, 0, 0); background-color: rgb(252, 229, 205);"><span style="background-color: rgb(255, 255, 255);">Θα
+πρέπει να ορίσετε κάποιες δομές (π.χ., απλούς πίνακες ή πίνακες
+κατακερματισμού) στο πρόγραμμά σας. Σε αυτές θα κρατάτε όποια στοιχεία
+χρειάζεστε για τα ανοιχτά αρχεία, με κάθε (μη κενή) θέση του πίνακα να
+περιέχει ή να δείχνει προς τα στοιχεία που αντιστοιχούν σε ένα αρχείο.
+Αν ο πίνακας είναι γεμάτος και ζητηθεί και άλλο άνοιγμα αρχείου, το
+αντίστοιχο μήνυμα σφάλματος πρέπει να παραχθεί.</span></span> Εσείς
+μπορείτε να υλοποιήσετε τα πράγματα διαφορετικά αν θέλετε. Οι διεπαφές
+των ρουτινών και η λειτουργικότητά τους είναι τα μόνα πράγματα που δεν
+μπορείτε να αλλάξετε, <span style="background-color: rgb(255, 255, 255);">όπως επίσης και η δομή fileInfo_t.</span><br style="background-color: rgb(255, 255, 255);">
+<span style="background-color: rgb(255, 255, 255);">Κάθε συνάρτηση
+πρέπει να θέτει μία καθολική μεταβλητή του προγράμματος BF_errno στον
+κατάλληλο κωδικό σφάλματος, ανάλογα με την έκβασή της εκτέλεσής της
+(της συνάρτησης). Το σφάλμα αυτό επιστρέφεται στα πιο πάνω επίπεδα για
+την κατάλληλη διαχείριση του.</span><br>
+<hr>
+<h2>
+  <img src="FMM_files/MISSING.html"> Σχολιασμός, Έλεγχος Σφαλμάτων, και Γενική Μορφοποίηση
+</h2>
+Όπως πάντοτε, αναμένεται καλός σχολιασμός του προγράμματος, και
+εσωτερικός (ανάμεσα στις γραμμές κώδικα) και εξωτερικός (στην αρχή κάθε
+ρουτίνας). Ένας γενικός κανόνας είναι να σχολιάζετε τα προγράμματά σας
+σαν να πρόκειται να τα δώσετε σε κάποιον άλλον ο οποίος θα τα
+επεκτείνει και ο οποίος δεν έχει ιδέα για το τι κάνατε όταν τα γράφατε
+(και δεν μπορεί ούτε να σας βρει να σας ρωτήσει).
+<p> Επίσης, θα πρέπει να ελέγχετε για διάφορα σφάλματα που μπορούν να
+προκύψουν και να βεβαιωθείτε ότι ο κώδικάς σας τερματίζει ομαλά, με
+μηνύματα που έχουν νόημα, σε όλες τις εισόδους που ικανοποιούν την
+παραπάνω περιγραφή.
+</p>
+<hr>
+<h2>
+  <img src="FMM_files/MISSING.html">Διαδικαστικές Λεπτομέρειες
+</h2>Το τί ακριβώς θα παραδώσετε, πού θα βρείτε τα αρχεία με τα οποία
+θα ελέγξετε τελικά το πρόγραμμά σας, κτλ., θα ανακοινωθεί σύντομα.
+<p> Τα προγράμματά σας θα πρέπει να δουλεύουν στα μηχανήματα του
+τμήματος (είτε στα sun (Linux) είτε στα pc (Windows)) ώστε να μπορούν
+να ελεγχθούν. Ακόμη και αν δουλέψετε σε δικούς σας υπολογιστές θα
+πρέπει να βεβαιωθείτε ότι το τελικό αποτέλεσμα δουλεύει και εδώ τοπικά.
+Η έκδοση της C που θα χρησιμοποιήσετε πρέπει να έχει ακέραιους των 4
+bytes και να επιτρέπει αλλαγή ερμηνείας τύπου δεδομένων (type casting).
+</p>
+<hr size="2"><br></body></html>

@@ -1,0 +1,897 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="pageview"><head>
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- base -->
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  
+
+  
+    .writely-callout-data {
+      display: none;
+      *display: inline-block;
+      *width: 0;
+      *height: 0;
+      *overflow: hidden;
+    }
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    
+    .editor .writely-comment-yellow {
+      background-color: #FF9;
+      background-position: -240px 0;
+    }
+    .editor .writely-comment-yellow-hover {
+      background-color: #FF0;
+      background-position: -224px 0;
+    }
+    .editor .writely-comment-blue {
+      background-color: #C0D3FF;
+      background-position: -16px 0;
+    }
+    .editor .writely-comment-blue-hover {
+      background-color: #6292FE;
+      background-position: 0 0;
+    }
+    .editor .writely-comment-orange {
+      background-color: #FFDEAD;
+      background-position: -80px 0;
+    }
+    .editor .writely-comment-orange-hover {
+      background-color: #F90;
+      background-position: -64px 0;
+    }
+    .editor .writely-comment-green {
+      background-color: #99FBB3;
+      background-position: -48px 0;
+    }
+    .editor .writely-comment-green-hover {
+      background-color: #00F442;
+      background-position: -32px 0;
+    }
+    .editor .writely-comment-cyan {
+      background-color: #CFF;
+      background-position: -208px 0;
+    }
+    .editor .writely-comment-cyan-hover {
+      background-color: #0FF;
+      background-position: -192px 0;
+    }
+    .editor .writely-comment-purple {
+      background-color: #EBCCFF;
+      background-position: -144px 0;
+    }
+    .editor .writely-comment-purple-hover {
+      background-color: #90F;
+      background-position: -128px 0;
+    }
+    .editor .writely-comment-magenta {
+      background-color: #FCF;
+      background-position: -112px 0;
+    }
+    .editor .writely-comment-magenta-hover {
+      background-color: #F0F;
+      background-position: -96px 0;
+    }
+    .editor .writely-comment-red {
+      background-color: #FFCACA;
+      background-position: -176px 0;
+    }
+    .editor .writely-comment-red-hover {
+      background-color: #FF7A7A;
+      background-position: -160px 0;
+    }
+
+    .editor .writely-comment-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      padding-right: 11px;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      -moz-user-select: none;
+    }
+
+    .editor .writely-comment-hidden {
+      padding: 0;
+      background: none;
+    }
+    .editor .writely-comment-marker-hidden {
+      background: none;
+      padding: 0;
+      width: 0;
+    }
+    .editor .writely-comment-none {
+      opacity: .2;
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+      -moz-opacity: .2;
+    }
+    .editor .writely-comment-none-hover {
+      opacity: .2;
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+      -moz-opacity: .2;
+    }
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>UT-DM - Data Manipulation</title>
+
+</head><body>
+    
+    
+    
+<div>
+  <div style="text-align: center;">
+    <h1>
+      Πληροφορική &amp; Τηλεπικοινωνίες K25<br>
+      Ανάπτυξη Λογισμικού<br>
+      Χειμερινό Εξάμηνο 2009-10<br>
+      Καθηγητής Γιάννης Ιωαννίδης
+    </h1>
+  </div>
+  <p>
+  </p>
+  <hr>
+  <h1 style="text-align: center;">
+    Μέρος 3ο, 2/2: Χειρισμός δεδομένων και επίπεδο λειτουργικότητας χρήστη<br>
+  </h1>
+  <div>
+  </div>
+  <h3 style="text-align: center;">
+    (Ημερομηνία Παράδοσης: Τρίτη, 19/1/2010, 17:00)
+  </h3>
+  <br>
+  <div style="text-align: center;">
+    <img src="DM_files/drawing_snTqL4lRg5wNfLcR_A-TMdA_378.png"><br>
+  </div>
+  <br>
+  Για την ολοκλήρωση της όλης εργασίας απαιτείται η κατασκευή του προγράμματος aminirel.<br>
+  <h3>
+    aminirel
+  </h3>
+  <div style="text-align: justify;">
+    Το πρόγραμμα <i>aminirel</i> χρησιμοποιείται για την διαχείριση των δεδομένων (πχ. δημιουργία σχέσεων) που υπάρχουν σε μία βάση.<br>
+  </div>
+  <br>
+  <p style="text-align: justify;">
+    <b>Σύνταξη:</b> Η λειτουργία του προγράμματος είναι εξαιρετικά απλή. Το πρόγραμμα αρχίζει την εκτέλεσή του όταν ο χρήστης πληκτρολογήσει <i>aminirel dbName</i> στο κέλυφος του λειτουργικού συστήματος. <i>dbName</i>
+είναι το όνομα της βάσης που θέλει ο χρήστης να χρησιμοποιήσει. Στην
+συνέχεια το πρόγραμμα εκτελεί τις εντολές που ο χρήστης δίνει από το
+πληκτρολόγιο. Η εκτέλεση του προγράμματος τερματίζεται όταν ο χρήστης
+πληκτρολογήσει <i>quit</i>. Οι εντολές που μπορεί να δώσει ο χρήστης είναι οι εξής (τα τμήματα που είναι μέσα σε [] είναι προαιρετικά):
+  </p>
+  <p>
+    <u><i>Α) Βοηθητικές εντολές:</i></u>
+  </p>
+  <p>
+    <b>1) <a name="CREATE">CREATE</a> relname (attr1=format1, ... , attrN=formatN);</b>
+  </p>
+  <blockquote>
+    <div style="text-align: justify;">
+    </div>
+    <p style="text-align: justify;">
+Η εντολή αυτή δημιουργεί μία νέα σχέση με όνομα relname. Η σχέση αυτή
+έχει N γνωρίσματα με ονόματα attr1, attr2, ... attrN. Ο τύπος (format)
+του κάθε γνωρίσματος μπορεί να είναι 'i', 'f' ή 'cXXX' όπου ΧΧΧ είναι
+ένας αριθμός. Εάν το format είναι 'i' ή 'f', τότε το αντίστοιχο
+γνώρισμα είναι ακέραιος ή πραγματικός αριθμός. Αν το format είναι
+'cXXX' τότε το αντίστοιχο γνώρισμα είναι κείμενο μήκους XXX χαρακτήρων.
+Ο αριθμός XXX κυμαίνεται από 1 έως MAXSTRINGLENGTH = 255 </p>
+  </blockquote>
+  <p>
+    <b>2) <a name="BUILDINDEX">BUILDINDEX</a> relname(attrName);</b>
+  </p>
+  <blockquote>
+    <div style="text-align: justify;">
+    </div>
+    <p style="text-align: justify;">
+      Η εντολή αυτή δημιουργεί ένα ευρετήριο για τη σχέση relName, με βάση το γνώρισμα attrName.
+    </p>
+  </blockquote>
+  <p>
+    <b>3) <a name="DESTROY">DESTROY</a> relname;</b>
+  </p>
+  <blockquote>
+    <div style="text-align: justify;">
+    </div>
+    <p style="text-align: justify;">
+Η εντολή αυτή διαγράφει τη σχέση με όνομα relname. Επιπλέον, διαγράφει
+και τα τυχόν ευρετήρια που σχετίζονται με αυτή τη σχέση. </p>
+  </blockquote>
+  <p>
+    <b>4) <a name="QUIT">QUIT</a>;</b>
+  </p>
+  <blockquote>
+    <p>
+      Η εντολή αυτή προκαλεί τον τερματισμό του προγράμματος <i>minirel</i>.
+    </p>
+  </blockquote>
+  <p>
+    <u><i>Β) Εντολές χειρισμού δεδομένων:</i></u>
+  </p>
+  <p>
+    <b>1) <a name="SELECT">SELECT </a>[INTO relname] &lt;TARGET_LIST&gt; [WHERE &lt;CONDITION&gt;]</b>
+  </p>
+  <blockquote>
+    <div style="text-align: justify;">
+    </div>
+    <p style="text-align: justify;">
+Η εντολή αυτή τυπώνει το αποτέλεσμα ενός ερωτήματος, ή προαιρετικά
+εισάγει το αποτέλεσμα αυτό σε μία καινούργια σχέση με όνομα relname.
+Εάν λείπει το τμήμα [WHERE &lt;CONDITION&gt;] της εντολής, τότε
+ανασύρονται όλες οι εγγραφές της σχέσης που δηλώνει το TARGET_LIST.<br>
+Το TARGET_LIST έχει τη μορφή (relname1.attr1, relname2.attr2,...
+,relnameN.attrN). To TARGET_LIST καθορίζει ποια γνωρίσματα πρέπει να
+περιληφθούν στην απάντηση της εντολής SELECT. Όλα τα γνωρίσματα πρέπει
+να προέρχονται από την ίδια σχέση, εκτός και αν το CONDITION υποδηλώνει
+ζεύξη σχέσεων, στην οποία περίπτωση, τα γνωρίσματα μπορούν να ανήκουν
+σε οποιαδήποτε από τις δύο σχέσεις της ζεύξης. Επομένως, αν το ερώτημα
+δεν περιέχει ζεύξη, τότε όλα τα relnameX είναι ίδια, ενώ στην αντίθετη
+περίπτωση, καθένα από τα relnameX αντιστοιχεί σε ένα από τα δύο ονόματα
+των σχέσεων που συμμετέχουν στη ζεύξη.<br>
+Σε ό,τι αφορά το CONDITION, αυτό έχει τη γενική μορφή relname.attr
+&lt;OP&gt; value ή τη μορφή relname1.attr1 &lt;OP&gt; relname2.attr2,
+ανάλογα με το αν το ερώτημα είναι επιλογής ή ζεύξης, αντίστοιχα. Και
+στις δύο περιπτώσεις, ο τελεστής OP μπορεί να είναι '=', '&lt;',
+'&lt;=', '&gt;', '&gt;=' ή '!='. Στην περίπτωση που το ερώτημα είναι
+ερώτημα επιλογής, τότε το value είναι μία σταθερή τιμή όπως για
+παράδειγμα -5, 6.7, "foo" κλπ. Σε αυτήν την περίπτωση, η έννοια της
+ερώτησης είναι να επιλεχθούν όλες οι εγγραφές που ικανοποιούν τη
+συνθήκη. Αντίστοιχα, αν το ερώτημα είναι τύπου ζεύξης, τότε πρέπει να
+ανασυρθούν όλες οι εγγραφές και από τις δύο σχέσεις που πληρούν τη
+συνθήκη της ζεύξης. </p>
+  </blockquote>
+  <p>
+    <b>2) <a name="DELETE">DELETE</a> relname [WHERE attr &lt;OP&gt; value]</b>
+  </p>
+  <div style="text-align: justify;">
+    <blockquote>
+      <p>
+Η εντολή αυτή διαγράφει όλες τις εγγραφές της σχέσης με όνομα relname
+οι οποίες ικανοποιούν το δοθέν κριτήριο. Αν η εντολή δεν έχει τμήμα
+WHERE, τότε όλες οι εγγραφές της σχέσης πρέπει να διαγραφούν. </p>
+    </blockquote>
+  </div>
+  <br>
+  <p>
+    <b>3) <a name="INSERT">INSERT</a> relname (attr1=value1, attr2=value2, ..., attrN=valueN)</b>
+  </p>
+  <blockquote>
+    <div style="text-align: justify;">
+    </div>
+    <p style="text-align: justify;">
+Η εντολή αυτή εισάγει μία εγγραφή στη σχέση με όνομα relname. Η σειρά
+με την οποία δίνονται τα γνωρίσματα είναι τυχαία, όμως σε όλα τα
+γνωρίσματα της σχέσης πρέπει να ανατίθεται τιμή. </p>
+  </blockquote>
+  <br>
+  <p style="text-align: justify;">
+    <b>Πληροφορίες υλοποίησης:</b> Μέσα στην παρεχόμενη βιβλιοθήκη, υπάρχει μια συνάρτηση με όνομα <i>yyparse</i>.
+Η ρουτίνα αυτή αναλαμβάνει να χειριστεί την εισαγωγή των εντολών και
+την κλήση των κατάλληλων συναρτήσεων (τις οποίες θα υλοποιήσετε εσείς)
+που υλοποιούν τις εντολές αυτές. Για παράδειγμα, αν ο χρήστης
+πληκτρολογήσει την εντολή <i>DESTROY foo</i> τότε η συνάρτηση <i>yyparse</i> αυτόματα θα καλέσει την συνάρτηση <i>UT_destroy(...)</i> η οποία θα πρέπει να διαγράψει τη σχέση <i>foo</i>. Επομένως, η εργασία σας για την υλοποίηση του προγράμματος <i>aminirel</i> περιορίζεται στην υλοποίηση αυτών των συναρτήσεων που καλούνται αυτόματα από την <i>yyparse</i>.
+  </p>
+  <p style="text-align: justify;">
+    Σε γενικές γραμμές, η συνάρτηση main του <i>aminirel</i> θα έχει την εξής μορφή:
+  </p>
+  <font face="Courier New"><br>
+  int main(int argc, char* argv[]){<br>
+  &nbsp;&nbsp; &nbsp;char command[80];<br>
+  &nbsp;&nbsp; &nbsp;char* dbname;<br>
+  <br>
+  &nbsp;&nbsp; &nbsp;if(argc!=2){<br>
+  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;printf("Χρήση: %s aminirel \n",argv[0]);<br>
+  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;return(1);<br>
+  &nbsp;&nbsp; &nbsp;}<br>
+  &nbsp;&nbsp; &nbsp;dbname=argv[1];<br>
+  <br>
+  &nbsp;&nbsp; &nbsp;/* Αρχικοποίηση προγράμματος */<br>
+  &nbsp;&nbsp; &nbsp;/* και άνοιγμα σχέσεων καταλόγου */<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  <br>
+  &nbsp;&nbsp; &nbsp;/* Κλήση της συνάρτησης yyparse ή οποία */<br>
+  &nbsp;&nbsp; &nbsp;/* θα καλεί αυτόματα τις συναρτήσεις σας */<br>
+  &nbsp;&nbsp; &nbsp;while(yyparse() == RESTART);<br>
+  <br>
+  &nbsp;&nbsp; &nbsp;/* Κλείσιμο προγράμματος και */<br>
+  &nbsp;&nbsp; &nbsp;/* κλείσιμο των σχέσεων καταλόγου αν */<br>
+  &nbsp;&nbsp; &nbsp;/* ο χρήστης δεν πληκτρολόγησε την */<br>
+  &nbsp;&nbsp; &nbsp;/* εντολή QUIT */<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;return(0);<br>
+  }<br>
+  <br>
+  </font> <hr>
+  <h2>
+    <img src="DM_files/MISSING.html">Συμβολομεταφραστής
+  </h2>
+  <p style="text-align: justify;">
+    Μέσα στην παρεχόμενη βιβλιοθήκη, υπάρχει μια συνάρτηση με το όνομα <i>yyparse</i> η οποία δεν δέχεται κανένα όρισμα και επιστρέφει 0 αν εκτελεστεί η εντολή QUIT αλλιώς επιστρέφει RESTART (ορίζεται στο <a href="http://cgi.di.uoa.gr/%7Ek25/parser.tab.h">parser.tab.h</a>):
+  </p>
+  <blockquote>
+    <font face="Courier New">int yyparse(void)</font>
+  </blockquote>
+  <p style="text-align: justify;">
+    Η ρουτίνα αυτή αναλαμβάνει να χειριστεί την εισαγωγή των εντολών στο πρόγραμμα <i>aminirel</i>
+και την κλήση των κατάλληλων συναρτήσεων (τις οποίες θα υλοποιήσετε
+εσείς) που υλοποιούν της εντολές αυτές. Για παράδειγμα, αν ο χρήστης
+πληκτρολογήσει στο <i>aminirel</i> την εντολή <i>DESTROY foo</i> τότε η συνάρτηση <i>yyparse</i> αυτόματα θα καλέσει την συνάρτηση <i>UT_destroy</i> η οποία θα πρέπει να διαγράψει τη σχέση <i>foo</i>. Επομένως, η εργασία σας για την υλοποίηση του προγράμματος <i>aminirel</i> περιορίζεται στην υλοποίηση αυτών των συναρτήσεων που καλούνται αυτόματα από την <i>yyparse</i>.
+  </p>
+  <div>
+  </div>
+  <p style="text-align: justify;">
+    Οι περισσότερες συναρτήσεις που καλεί η <i>yyparse</i> (ορίζονται στην επόμενη ενότητα) δέχονται δύο ορίσματα, το <i>argc</i> και το <i>argv</i>. To <i>argv</i> είναι ένας πίνακας με <i>argc</i>+1 στοιχεία. Τα στοιχεία αυτά είναι δείκτες σε κείμενο (δηλ. <i>char*</i>). Κατά σύμβαση, το πρώτο στοιχείο του <i>argv</i> είναι το όνομα της εντολής που πρέπει να εκτελεσθεί, ενώ το τελευταίο στοιχείο είναι NULL. Ο πίνακας <i>argv</i>
+έχει όλα τα απαιτούμενα στοιχεία που χρειάζεται κάποιος για να
+καταλάβει τι πρέπει να κάνει η εντολή. Η χρήση του πίνακα είναι
+υποχρεωτική καθώς ο αριθμός των παραμέτρων δεν είναι σταθερός. </p>
+  <br>
+  <p style="text-align: justify;"> Για την υλοποίηση
+αυτών των προγραμμάτων θα πρέπει να χρησιμοποιήσετε ένα σύνολο από
+συναρτήσεις, οι οποίες και θα καλούν τις συναρτήσεις που έχετε ήδη
+φτιάξει στα κατώτερα επίπεδα για το χειρισμό εγγραφών ενός πίνακα και
+δευτερευόντων ευρετηρίων πίνακα. </p>
+  <p style="text-align: justify;">
+    Οι συναρτήσεις που απαιτούνται σε αυτό το επίπεδο υλοποιούν την <i>ΕΚΤΕΛΕΣΗ</i> των εντολών που υποστηρίζει το <i>aminirel</i>. Οι βοηθητικές συναρτήσεις δεδομένων υλοποιούν τις εντολές <i>CREATE, BUILDINDEX, DESTROY,</i> και <i>QUIT που υλοποιήθηκαν στο πρώτο μέρος</i>. Οι συναρτήσεις χειρισμού δεδομένων υλοποιούν τις εντολές <i>SELECT, INSERT,</i> και <i>DELETE</i>.
+Οι συναρτήσεις του ενδιάμεσου αυτού επιπέδου δουλεύουν σε επίπεδο
+εγγραφών και ευρετηρίων, παρέχοντας στον συμβολομεταφραστή
+ολοκληρωμένες λειτουργίες (π.χ., δημιουργία μίας σχέσης). </p>
+  <p style="text-align: justify;"> Μία σημαντική λειτουργία
+που υλοποιείται στο ενδιάμεσο επίπεδο είναι οι υπηρεσίες καταλόγου της
+βάσης. Δεν εμφανίζονται στο παραπάνω σχήμα γιατί δεν παρέχεται
+αντίστοιχη διεπαφή προγραμματισμού προς το ανώτερο επίπεδο. Αντίθετα,
+οι υπηρεσίες καταλόγου χρησιμοποιούνται εσωτερικά από τις δύο
+κατηγορίες συναρτήσεων δεδομένων. </p>
+  <div>
+  </div>
+  <p style="text-align: justify;"> Σε υψηλό
+επίπεδο, ο συμβολομεταφραστής αναλαμβάνει την μετατροπή των εντολών από
+απλό κείμενο σε μία εσωτερική δομημένη μορφή και την κλήση των
+κατάλληλων συναρτήσεων (του ενδιάμεσου επιπέδου) ώστε τελικά να
+εκτελεστούν οι εντολές που ο χρήστης δίνει στο σύστημα. Ο
+συμβολομεταφραστής έχει και αυτός υλοποιηθεί και θα σας δοθεί. </p>
+  <br>
+  <br>
+  <div style="text-align: center;">
+    <font size="5"><i><b>DM (Data Manipulation)<br>
+    </b></i></font>
+  </div>
+  <br>
+  <div style="text-align: justify;">
+    Οι Συναρτήσεις χειρισμού δεδομένων υλοποιούν τις εντολές του <i>aminirel</i>
+που κάνουν εισαγωγή, διαγραφή και επιλογή εγγραφών από σχέσεις.
+Πρόκειται για συναρτήσεις οι οποίες καλούνται απευθείας από τον
+συμβολομεταφραστή, ανάλογα με τις εντολές που εισάγει ο χρήστης.
+Ειδικότερα οι συναρτήσεις χειρισμού δεδομένων είναι οι εξής:<br>
+  </div>
+  <br>
+  <br>
+  <font size="4">DM_Select()</font><br>
+  <br>
+  <font face="Courier New">int <a name="UT_select">DM_select</a>(int argc, char* argv[])<br>
+  &nbsp;&nbsp; &nbsp;argv[0]="select"<br>
+  &nbsp;&nbsp; &nbsp;argv[1]=όνομα-σχέσης-αποτελέσματος /* Προαιρετικό στοιχείο */<br>
+  &nbsp;&nbsp; &nbsp;argv[2]=πλήθος-γνωρισμάτων-τα-οποία-προβάλλονται /* ακέραιος */<br>
+  &nbsp;&nbsp; &nbsp;argv[3]=όνομα-προβαλλόμενης-σχέσης-1<br>
+  &nbsp;&nbsp; &nbsp;argv[4]=όνομα-προβαλλόμενου-πεδίου-1<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-5]=όνομα-προβαλλόμενου-πεδίου-Ν<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-4]=όνομα-σχέσης-επιλογής /* Τα στοιχεία */<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-3]=όνομα-πεδίου-επιλογής /* αυτά */<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-2]=τελεστής /* είναι */<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-1]=τιμή /* προαιρετικά */<br>
+  &nbsp;&nbsp; &nbsp;argv[argc]=NULL<br>
+  <br>
+  </font>
+  <p style="text-align: justify;">
+    Η συνάρτηση αυτή καλείται από την <i>yyparse</i> όταν ο χρήστης πληκτρολογήσει μια εντολή <i>SELECT</i>
+η οποία να μην είναι τύπου ζεύξης. Σε ό,τι αφορά την υλοποίηση της
+εντολής αυτής, παρατηρήστε ότι όταν ζητείται να τυπωθούν τα
+αποτελέσματα στην οθόνη, μπορείτε να εισάγετε τα αποτελέσματα σε μία
+προσωρινή σχέση, στην συνέχεια να τυπώσετε τα περιεχόμενα της σχέσης
+αυτής και τέλος να την καταστρέψετε. Επομένως, μπορείτε να χειρισθείτε
+την περίπτωση που τα αποτελέσματα πρέπει να εισαχθούν σε μία σχέση ως
+μια ειδίκευση της περίπτωσης που τα αποτελέσματα πρέπει απλά να
+τυπωθούν. </p>
+  <p style="text-align: justify;"> Καθώς θα σαρώνετε τις
+εγγραφές για να επιλέξετε αυτές που ικανοποιούν το κριτήριο της
+επιλογής (αν βέβαια υπάρχει), θα πρέπει ταυτόχρονα να κάνετε και τον
+περιορισμό πάνω στα γνωρίσματα που τελικά θα υπάρχουν στην απάντηση της
+ερώτησης. Δεν πρέπει να κάνετε πρώτα την επιλογή των εγγραφών και στην
+συνέχεια να κάνετε τον περιορισμό πάνω στα γνωρίσματα που υπάρχουν στην
+εντολή. </p>
+  <p style="text-align: justify;">
+    Αν υπάρχει ευρετήριο πάνω στο <i>όνομα-πεδίου-επιλογής</i> τότε θα πρέπει <i>υποχρεωτικά</i> να το χρησιμοποιήσετε εφόσον ο <i>τελεστής</i> υποστηρίζεται από τον τύπο του ευρετηρίου.
+  </p>
+  <p style="text-align: justify;">
+    Τέλος, προσοχή θέλει το γεγονός ότι το στοιχείο <i>τιμή</i> (όπως επίσης και το στοιχείο <i>τελεστής</i>) είναι δείκτης σε κείμενο, δηλαδή θα πρέπει εσείς να κάνετε την μετατροπή στον σωστό τύπο.
+  </p>
+  <br>
+  <br>
+  <br>
+  <font size="4">DM_Join()</font><br>
+  <br>
+  <font face="Courier New">int <a name="DM_join">DM_join</a>(int argc, char* argv[])<br>
+  &nbsp;&nbsp; &nbsp;argv[0]="join"<br>
+  &nbsp;&nbsp; &nbsp;argv[1]=όνομα-σχέσης-αποτελέσματος /* Προαιρετικό στοιχείο */<br>
+  &nbsp;&nbsp; &nbsp;argv[2]=πλήθος-γνωρισμάτων-τα-οποία-προβάλλονται /* ακέραιος */<br>
+  &nbsp;&nbsp; &nbsp;argv[3]=όνομα-προβαλλόμενης-σχέσης-1<br>
+  &nbsp;&nbsp; &nbsp;argv[4]=όνομα-προβαλλόμενου-πεδίου-1<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-7]=όνομα-προβαλλόμενης-σχέσης-Ν<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-6]=όνομα-προβαλλόμενου-πεδίου-Ν<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-5]=όνομα-σχέσης-ζεύξης-1<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-4]=όνομα-πεδίου-ζεύξης-1<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-3]=τελεστής<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-2]=όνομα-σχέσης-ζεύξης-2<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-1]=όνομα-πεδίου-ζεύξης-2<br>
+  &nbsp;&nbsp; &nbsp;argv[argc]=NULL</font>
+  <p>
+    <br>
+  </p>
+  <p style="text-align: justify;">
+    Η συνάρτηση αυτή καλείται από την <i>yyparse</i> όταν ο χρήστης πληκτρολογήσει μια εντολή <i>SELECT</i>
+η οποία είναι τύπου ζεύξης. Για την υλοποίηση της συνάρτησης αυτής
+ισχύουν οι ίδιες παρατηρήσεις που δίνονται και για την συνάρτηση <i>DM_select</i>.
+Επιπλέον, για τη ζεύξη θα πρέπει να χρησιμοποιηθεί ο αλγόριθμος
+εμφωλιασμένων βρόχων. Αν υπάρχει ευρετήριο σε κάποιο από τα γνωρίσματα
+ζεύξης θα πρέπει επίσης <i>υποχρεωτικά</i> να χρησιμοποιηθεί εφόσον ο <i>τελεστής</i> υποστηρίζεται από τον τύπο του ευρετηρίου.
+  </p>
+  <p>
+    <br>
+  </p>
+  <p>
+    <br>
+  </p>
+  <br>
+  <font size="4">DM_Delete()</font><br>
+  <font face="Courier New">int <a name="DM_delete">DM_delete</a>(int argc, char* argv[])<br>
+  &nbsp;&nbsp; &nbsp;argv[0]="delete"<br>
+  &nbsp;&nbsp; &nbsp;argv[1]=όνομα-σχέσης<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-3]=όνομα-πεδίου /* Τα στοιχεία */<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-2]=τελεστής /* αυτά είναι */<br>
+  &nbsp;&nbsp; &nbsp;argv[argc-1]=τιμή /* προαιρετικά */<br>
+  &nbsp;&nbsp; &nbsp;argv[argc]=NULL</font>
+  <p>
+    <br>
+  </p>
+  <p style="text-align: justify;">
+    Η συνάρτηση αυτή καλείται από την <i>yyparse</i> όταν ο χρήστης πληκτρολογήσει μια εντολή <i>DELETE</i>. Για την υλοποίησή της θα πρέπει να χρησιμοποιήσετε τις συναρτήσεις <i>AM_DeleteEntry</i> και <i>ΗF_DeleteRec</i>. Αν υπάρχει ευρετήριο στο γνώρισμα που χρησιμοποιείται για την επιλογή των εγγραφών θα πρέπει <i>υποχρεωτικά</i> να χρησιμοποιηθεί εφόσον ο <i>τελεστής</i> υποστηρίζεται από τον τύπο του ευρετηρίου.
+  </p>
+  <br>
+  <br>
+  <font size="4">DM_Insert()</font><br>
+  <br>
+  <font face="Courier New">int <a name="DM_insert">DM_insert</a>(int argc, char* argv[])<br>
+  &nbsp;&nbsp; &nbsp;argv[0]="insert"<br>
+  &nbsp;&nbsp; &nbsp;argv[1]=όνομα-σχέσης<br>
+  &nbsp;&nbsp; &nbsp;argv[2]=όνομα-πεδίου-1<br>
+  &nbsp;&nbsp; &nbsp;argv[3]=τιμή-1<br>
+  &nbsp;&nbsp; &nbsp;argv[4]=όνομα-πεδίου-2<br>
+  &nbsp;&nbsp; &nbsp;argv[5]=τιμή-2<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;.<br>
+  &nbsp;&nbsp; &nbsp;argv[argc]=NULL</font><br>
+  <br>
+  <p style="text-align: justify;">
+    Η συνάρτηση αυτή καλείται από την <i>yyparse</i> όταν ο χρήστης πληκτρολογήσει μια εντολή <i>INSERT</i>. Για την υλοποίησή της θα πρέπει να χρησιμοποιήσετε τις συναρτήσεις <i>AM_InsertEntry</i> και <i>ΗF_InsertRec</i>.
+  </p>
+  <br>
+  <br>
+  <h2>
+    Σχολιασμός, Έλεγχος Σφαλμάτων, και Γενική Μορφοποίηση
+  </h2>
+  <div style="text-align: justify;">
+Όπως πάντοτε, αναμένεται καλός σχολιασμός του προγράμματος, και
+εσωτερικός (ανάμεσα στις γραμμές κώδικα) και εξωτερικός (στην αρχή κάθε
+ρουτίνας). Ένας γενικός κανόνας είναι να σχολιάζετε τα προγράμματά σας
+σαν να πρόκειται να τα δώσετε σε κάποιον άλλον ο οποίος θα τα
+επεκτείνει και ο οποίος δεν έχει ιδέα για το τι κάνατε όταν τα γράφατε
+(και δεν μπορεί ούτε να σας βρει να σας ρωτήσει). </div>
+  <p style="text-align: justify;"> Επίσης, θα πρέπει να
+ελέγχετε για διάφορα σφάλματα που μπορούν να προκύψουν και να
+βεβαιωθείτε ότι ο κώδικάς σας τερματίζει ομαλά, με μηνύματα που έχουν
+νόημα, σε όλες τις εισόδους που ικανοποιούν την παραπάνω περιγραφή. </p>
+  <hr>
+  <h2>
+    <img src="DM_files/MISSING.html">Διαδικαστικές Λεπτομέρειες
+  </h2>
+  <div style="text-align: justify;">
+Το τί ακριβώς θα παραδώσετε, πού θα βρείτε τα αρχεία με τα οποία θα
+ελέγξετε τελικά το πρόγραμμά σας, κτλ., θα ανακοινωθεί σύντομα. </div>
+  <p style="text-align: justify;"> Τα προγράμματά σας θα
+πρέπει να δουλεύουν στα μηχανήματα του τμήματος (είτε στα sun (Linux)
+είτε στα pc (Windows)) ώστε να μπορούν να ελεγχθούν. Ακόμη και αν
+δουλέψετε σε δικούς σας υπολογιστές θα πρέπει να βεβαιωθείτε ότι το
+τελικό αποτέλεσμα δουλεύει και εδώ τοπικά. Η έκδοση της C που θα
+χρησιμοποιήσετε πρέπει να έχει ακέραιους των 4 bytes και να επιτρέπει
+αλλαγή ερμηνείας τύπου δεδομένων (type casting). </p>
+  <hr size="2"><br>
+</div>
+<br></body></html>

@@ -1,0 +1,25 @@
+<policy:optimistic unchoking>====<seeders sent>
+-----------------------------------------------
+[RU=0, leechers=6, seeds=1 ] ---> 3435
+[RU=1, leechers=6, seeds=1 ] ---> 5135 
+[RU=1, leechers=5, seeds=2 ] ---> 3075+2992=6067
+[RU=3, leechers=6, seeds=1 ] ---> 8498
+[RU=3, leechers=10, seeds=2] ---> 5293+5398=10691 ( 2672.75 MB, Gain: 87 MB )
+
+
+
+
+<policy:optimal unchoking>====<seeders sent>
+-----------------------------------------------
+[RU=0, leechers=6, seeds=1 ] ---> 2909
+[RU=1, leechers=6, seeds=1 ] ---> 4909
+[RU=1, leechers=5, seeds=2 ] ---> 2365+2335=4700
+[RU=3, leechers=6, seeds=1 ] ---> 8477
+[RU=3, leechers=10, seeds=2] ---> 5146+5197=10343 ( 2585.75 MB )
+
+
+
+
+
+
+

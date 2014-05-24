@@ -1,0 +1,68 @@
+		
+				------------------
+				| README-THREADS |
+				------------------
+
+
+H askhsh perilamvanei ta e3hs source arxeia:
+
+buffers.c
+records.c
+MapReduce_threaded.c
+
+
+buffers.c	
+----------
+
+Sto arxeio auto arxikopoioume tous edamieutes,tis metavlhtes syn8hkhs kai ton 
+mutex.
+
+
+records.c
+----------
+
+To arxeio auto perilamvanei tis ejhs synarthseis:
+
+Thn addrecord,opou pros8etoume tis eggrafes mesa stous buffers.Sto telos ths ka8e 
+eggrafhs,sto epomeno stoixeio tou buffer pros8etoume ws delimeter to '/0'.Prin 
+kanoume omws auto kleidwnoume ton mutex kai otan gemisei o edamieuths tote o 
+mapper 8a blokarei sth syn8hkh metavlhths pou ton afora kai 8a koimatai.
+Thn update_vectors,opou desmevoume me realloc pinakes gia ta keys kai ta values.
+Thn retrieve_records,h opoia kanei retrieve tis eggrafes apo ton antistoixo 
+buffer kai kalei tin update_vectors prokeimenou na prostethoun stous pinakes twn keys
+kai values.
+
+
+MapReduce_threaded.c
+---------------------
+
+Sto arxeio auto ousiastika ulopoioume to olo skeptiko pou akolou8ei to protypo 
+producer-consumer.Se adi8esh me th 2h askhsh den exoume M*R pipes, alla R 
+buffers.
+Arxika exoume mia metavlhth pou thn onomazoume runflag h opoia arxikopoieitai se 
+1 kai paramenei 1 oso den exoume lavei kapoio shma.
+Epishs exoume orisei kai dyo metavlhtes syn8hkhs,mia h opoia 
+leei pws o mapper prepei na blockaretai oso o edamieuths(buffer) einai gematos 
+kai h allh pou leei oti o reducer prepei na blockaretai otan o edamieuths einai 
+adeios,etsi wste na apofeugoume se ka8e periptwsh busy waiting.
+O mapper loipon me katakermatismo apofasizetai apo poia files tou input_folder 8a 
+diavasei kai sth synexeia kalwdas thn addrecord pros8etei tis diavasmenes 
+eggrafes stous edamieutes.
+O reducer apo thn allh desmevei xwro gia ta keys kai ta values,kleidwnei ton 
+mutex gia diavasma,perimenei-koimatai oso o edamieuths tou einai adeios,3ypnaei 
+otan uparxoun dedomena pros anagnwsh,kalei thn retrieve records me oti auto synepagetai  
+kai meta 3ypname ton mapper k telika 3ekleidwnoume ton mutex.An mexri 
+ekeinh th stigmh den exoume dex8ei akoma shma gia kapoio la8os tote o reducer 
+proxwraei se sort kai reduce.Telos apodesmevei tous dynamika desmeumenous 
+xwrous.Sth main autou tou arxeiou,gemizoume to set tou handler sto arxiko nhma me ta
+shmata pou 8eloume,desmevoume to xwro gia tous mappers,tous 
+reducers kai tous edamieutes(buffers) kai telika apodesmevoume tous dynamika 
+desmeumenous xwrous gia mappers,reducers,buffers alla kai tous xwrous pou eixan 
+desmeutei gia ton mutex kai tis metavlhtes syn8hkhs.To arxiko nhma perimenei ola
+ta nhmata na teleiwsoun wste na apodesmeutoun oi parapanw poroi.
+
+An dex8oume shma prepei se ka8e periptwsh ola ta nhmata na apodesmevoun tous porous 
+pou eixan desmeusei.Gia to logo auto kanoume to runflag 0 mesw tou handler kai stelnoume
+shma se oles tis metavlhtes syn8hkes prokeimenou na 3ypnhsoun ola ta nhmata.Katopin auta
+8a doun thn timh tou runflag h opoia 8a upodhlwnei th lhpsh shmatos kai 8a termatisoun opws
+proanaferame.
